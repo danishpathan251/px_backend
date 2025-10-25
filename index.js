@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Optional REST APIs
 app.use('/api/auth', apies);
 
-app.get("/",() => {
+app.get("/",(req,res) => {
 
     res.send("Welcome to Web socket project");
 
