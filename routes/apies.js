@@ -261,7 +261,7 @@ router.get("/search", (req, res) => {
           (item.name && item.name.toLowerCase().includes(query) )
       )
       .slice(0, 10); // limit to 10
-console.log(filtered);
+// console.log(filtered);
 
     res.json(filtered);
   } catch (err) {
