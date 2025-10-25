@@ -16,6 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Optional REST APIs
 app.use('/api/auth', apies);
 
+app.get("/",() => {
+
+    res.send("Welcome to Web socket project");
+
+})
 // Create HTTP server
 const server = http.createServer(app);
 
